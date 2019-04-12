@@ -1,0 +1,36 @@
+Git and Github:
+Windows, Mac and Linux:
+
+Mac users open terminal and run the following command: xcode-select --install
+Follows the instructions of each operating system on this page.
+R/Python:
+Windows, Mac and Linux:
+
+Install R from here: https://www.r-project.org/
+Install Rstudio from here: https://www.rstudio.com/products/rstudio/download/
+Mac users should also install X11 from here: https://www.xquartz.org/
+Install Anaconda with Python 3.7 from here: https://www.anaconda.com/distribution/
+
+Docker:
+Watch this video to get a high-level understanding of what Docker is.
+Follow the instruction on this page to install the Docker Community Edition (Docker CE) and test your installation on Mac and Windows.
+If your system does not meet the requirements to run Docker for Windows, you can try Docker Toolbox instead.
+
+Docker installation link : https://docs.docker.com/install/
+
+MySQL:
+Windows, Mac and Linux:
+
+Download MySQL Workbench from here.
+
+Data Science Simplified:
+What is Data Science?? --> its the study of generalizable extraction of knowledge from data.
+
+Need to Remember Euclid's Algorithm for Greatest Common Integer. 
+
+What is ML today -->  Machine Learning: utilizes algorithms so machines can learn from data automatically.
+
+Predictive Methods --> Use some variables to predict unknown or future values of other variables (kind of Supervised)
+Descriptive Methods --> Find human-interpretable patterns that describe the data. 
+Supervised learning: Study labeled data (data with response)
+Unsupervised learning: Study unlabeled data (without response)
