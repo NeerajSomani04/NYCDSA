@@ -1,1 +1,3 @@
-Notes
+**Need to understand difference between docker and virtual machine
+
+
