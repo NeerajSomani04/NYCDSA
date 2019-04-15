@@ -1,0 +1,12 @@
+
+
+Need to install following packages first -->
+install.packages('dply')
+install.packages('ggplot2')
+install.packages('rmarkdown')
+install.packages('knitr')
+install.packages('data.table')
+
+Introduction to KnitR and RMarkDown --> 
+
+Knitr is used to output the R markdown document into PDF or HTML.
