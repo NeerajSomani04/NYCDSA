@@ -1,0 +1,87 @@
+Exercise 5 -->
+
+Create a random vector of length 5 from draws of the standard normal distribution; call this vector x_1
+
+x_1 = seq(1, 70, length=5) # my answer could be wrong, because this is not standard normal distribution
+correct answer is --> x_1 = rnorm(5)
+x_2 = 1:10
+
+Exercise 6 -->
+
+Create a vector x_3 which consists of the first 5 elements from x_2
+
+x_3 = x_3 = x_2[seq(1,5)]
+
+Exercise 7 -->
+
+my_sum = x_1 + x_3
+
+x_1[3] * x_1[1]
+
+
+Exercise 8 --> Creating Matrices
+
+m_1 = matrix(1:6, 2, 3)
+m_2 = matrix(7:18, 4, 3)
+new_mat = rbind(m_1,m_2) --> concatenate matrix by row
+dim(new_mat) --> to check the size of dimension
+
+Exercise 9 -->
+my_mat2 = matrix(1:9, 3, 3, byrow=T)
+my_mat = matrix(1:9, 3, 3)
+
+my_mat2[1,] * my_mat2[,2]
+
+Exercise 10 -->
+
+species = c('dog', 'cat', 'dog')
+weight = c(20, 10, 40)
+pet = data.frame(species, weight)
+pet[pet$species == 'dog',]
+
+data1 = data[order(data$city, decreasing=T),]
+
+Exercise 13 -->
+
+pet = list(species=species, weight=weight)
+
+Exercise 14 -->
+weight_mean = mean(pet[[2]])
+pet[[2]] = pet[[2]] + 2
+
+Exercise 15 -->
+sapply(iris[,1:4], sd)
+lapply(iris[,1:4], sd)
+
+
+Homework RHW-1 -->
+
+Question 1 -->
+p = 5000
+n = 1:15
+r = 11.5
+A = (p) * ((1 + (r/100)) ^ n )
+
+Question 2 -->
+heights  = c(180, 165, 160, 193)
+weights = c(87, 58, 65, 100)
+
+BMI = (weights) / ( (heights * 0.01) ^ 2)
+
+Challange part of the question 2 -->
+height_6feet_in_cm = 30.48 * 6
+
+tall_vector = heights > height_6feet_in_cm # this will generate boolean vector for all height greater than 6 feet
+
+Question 3 -->
+
+library(datasets)
+data(cars)
+summary(cars)
+
+head(cars,5)
+
+set.seed(0)
+state = sample(c('NY', 'CA', 'CT'), size=dim(cars)[1], replace=TRUE)
+
+
