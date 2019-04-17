@@ -1,3 +1,41 @@
+Exercise 1 -->
+
+1. setwd("~/Downloads/NYC DSA Bootcamp/Unit-4-Data Analysis with R/lecture-2-intoToR1")
+
+2. ?lm or help(lm) used to find documentation for any function
+
+3. ls() # this function prints all the objects available in current working environemnt
+
+4. rm(list=ls()) # removes everything in the workspace
+
+Exercise 2 -->
+
+x = “Hello, I am”
+y = "Neeraj Somani"
+cat(x,y) # output is "Hello, I am Neeraj Somani"
+
+Exercise 3 -->
+
+5 / 2 # 2.5
+
+5 %/% 2 # 2 this is interger part only
+
+3 ^ (5 %/% 2) # 9
+
+(-3) ^ (5 %/% 2) # 9
+
+(-3) ^ (5 / 2 ) # NaN
+
+
+Exercise 4 -->
+
+x = '8'
+class(x)
+x + 1 # error because of incompatibility  
+x = as.numeric(x)
+x
+x+1
+
 Exercise 5 -->
 
 Create a random vector of length 5 from draws of the standard normal distribution; call this vector x_1
@@ -83,5 +121,41 @@ head(cars,5)
 
 set.seed(0)
 state = sample(c('NY', 'CA', 'CT'), size=dim(cars)[1], replace=TRUE)
+
+new_cars = c.bind(cars, state=state)
+
+ratio = cars$dist/cars$speed
+mean(ratio)
+sd(ratio)
+
+Question 4 -->
+
+ts_data = read.csv('https://s3.amazonaws.com/graderdata/TimesSquareSignage.csv', stringsAsFactors=FALSE)
+ts_data
+dim(ts_data)
+# number of observations are 184 and number of variables are 18
+
+sapply(colnames(ts_data), class) # this will return class type of each variable
+
+sum(is.na(ts_data)) # this will return total number of NA values is data set
+
+which(is.na(ts_data), arr.ind = TRUE) # this will return which row and which column has missing values
+ 
+Question 5 -->
+
+ts_data = read.csv('https://s3.amazonaws.com/graderdata/TimesSquareSignage.csv', stringsAsFactors=FALSE)
+ts_data
+dim(ts_data)
+
+UpperBway = ts_data[ts_data$Location == 'Upper Bway',]
+write.csv(UpperBway, file="UpperBway.csv", sep=",", eol="\n", row.names = FALSE)
+
+avg_sf = mean(ts_data$SF)
+SF = ts_data[ts_data$SF > avg_sf, ]
+write.csv(SF, file="SF.csv", sep=",", eol="\n", row.names = FALSE)
+
+sorted_data = ts_data[order(ts_data$TOTAL.SF, decreasing = TRUE),]
+final_data = sorted_data[c(1, 2, 4) ]
+head(final_data,10)
 
 
