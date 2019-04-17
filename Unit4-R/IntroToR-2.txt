@@ -1,0 +1,26 @@
+Exercise - 1 -->
+
+str1 = "R is great! I love data!"
+str2 = substr(str1, 6, 10)
+str1
+str2
+
+strTemp = strsplit(str1, split=" ")[[1]]
+strTemp
+
+str3 = grep('love', strTemp)
+str3
+
+str4 = gsub('great' , 'wonderful', str1)
+str4
+
+Exercise 2 --> 
+income1 = 4600
+
+tax1 = ifelse( income1 < 5000, 10, 20)
+income2 = 12300
+tax2 =  ifelse( income2 < 5000, 10, 20)
+
+Grade=c(75,93,88,80,99,75,76,92)
+choice = 'A'
+result = switch(choice, A = Grade[ Grade >= 90], B = Grade[ Grade > 80 & Grade < 89], C = Grade[Grade > 80 & Grade < 89])
