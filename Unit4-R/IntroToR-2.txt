@@ -24,3 +24,8 @@ tax2 =  ifelse( income2 < 5000, 10, 20)
 Grade=c(75,93,88,80,99,75,76,92)
 choice = 'A'
 result = switch(choice, A = Grade[ Grade >= 90], B = Grade[ Grade > 80 & Grade < 89], C = Grade[Grade > 80 & Grade < 89])
+
+
+Homework --->
+
+Question 1 --> 
