@@ -1,0 +1,4 @@
+Questions --> This lecture is very confusing. What should I do to understand this better.
+
+1) Why correlation formula has Standard Deviation in its denominator.
+2) 
